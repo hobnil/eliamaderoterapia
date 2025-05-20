@@ -99,19 +99,19 @@
             transform: translateY(0);
         }
 
-        /* ESTILOS ACTUALIZADOS SOLICITADOS POR EL USUARIO */
-        .text-gray-100 {
+        /* ESTILOS ACTUALIZADOS CON MAYOR ESPECIFICIDAD */
+        #maderoPage .text-gray-100 {
             color: #4A3B31; /* Aplicando el color brand-brown */
         }
-        .text-gray-200 {
+        #maderoPage .text-gray-200 {
             color: #4A3B31; /* Aplicando el color brand-brown */
         }
-        .text-gray-300 {
+        #maderoPage .text-gray-300 {
             color: #4A3B31; /* Aplicando el color brand-brown */
         }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased" id="maderoPage"> {/* ID AÑADIDO AQUÍ */}
 
     <section class="hero-bg text-white min-h-screen flex flex-col justify-center items-center p-6 relative overflow-hidden">
         <div class="hero-overlay"></div>
@@ -224,7 +224,8 @@
                         <img src="https://placehold.co/60x60/B08D57/FFFFFF?text=LP" alt="Laura P." class="rounded-full mr-4">
                         <div>
                             <h4 class="font-semibold text-lg brand-brown">Laura P.</h4>
-                            <p class="text-sm brand-brown opacity-75">Barcelona</p> </div>
+                            <p class="text-sm brand-brown opacity-75">Barcelona</p> 
+                        </div>
                     </div>
                     <p class="brand-brown italic">"Después de mi embarazo, no reconocía mi abdomen. Con Madero Body Glow, no solo reduje la flacidez, ¡sino que recuperé la confianza! Es increíble lo relajante que es cada sesión."</p>
                     <div class="mt-3 text-yellow-400">
@@ -265,6 +266,7 @@
         <div class="container mx-auto px-6 text-center reveal-on-scroll">
             <i class="fas fa-stopwatch text-6xl text-yellow-400 mb-6 animate-pulse"></i>
             <h2 class="font-heading text-4xl md:text-5xl mb-6 brand-gold">¡Tu Momento es AHORA! Plazas Muy Limitadas.</h2>
+            {/* Los párrafos siguientes usarán las clases .text-gray-xxx que ahora están definidas con color #4A3B31 */}
             <p class="text-xl md:text-2xl mb-4 text-gray-100"> 🛑 Para garantizar una atención premium y personalizada, solo acepto <strong class="text-yellow-400 text-3xl font-bold">10 nuevas clientas</strong> este mes para el Pack ‘Renueva tu Cuerpo & Tu Autoestima’.
             </p>
             <p class="text-lg text-gray-200 mb-10"> 🎯 Esta oferta especial <strong class="underline">termina el próximo domingo a las 23:59h</strong> o cuando se agoten las plazas (lo que ocurra primero). ¡No te quedes fuera!
@@ -282,16 +284,19 @@
     </section>
 
     <section class="py-12 bg-brand-cream border-t border-gray-300">
-        <div class="container mx-auto px-6 text-center brand-brown reveal-on-scroll"> <h4 class="font-semibold mb-3 text-xl">¿Dónde Encontrarme?</h4>
+        <div class="container mx-auto px-6 text-center brand-brown reveal-on-scroll"> 
+            <h4 class="font-semibold mb-3 text-xl">¿Dónde Encontrarme?</h4>
             <p class="mb-1"><i class="fas fa-map-marker-alt brand-gold mr-2"></i>[Tu Dirección o Zona de Servicio Principal], [Ciudad]</p>
             <p class="mb-4"><i class="fas fa-clock brand-gold mr-2"></i>Horario: Lunes a Viernes de 10h a 20h (con cita previa)</p>
-            <p class="text-sm italic opacity-80">Para una experiencia óptima, todas las sesiones son con cita previa confirmada por WhatsApp.</p> </div>
+            <p class="text-sm italic opacity-80">Para una experiencia óptima, todas las sesiones son con cita previa confirmada por WhatsApp.</p> 
+        </div>
     </section>
 
-    <footer class="bg-brand-brown text-gray-200 py-10"> <div class="container mx-auto px-6 text-center">
+    <footer class="bg-brand-brown text-gray-200 py-10"> 
+        <div class="container mx-auto px-6 text-center">
             <p class="mb-2">&copy; 2025 [Tu Nombre o Nombre de tu Negocio]. Todos los derechos reservados.</p>
             <p class="text-sm">Maderoterapia Profesional en [Tu Ciudad/Zona] para Resultados Reales y Bienestar Integral.</p>
-            </div>
+        </div>
     </footer>
 
     <script>
