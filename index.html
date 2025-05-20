@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madero Body Glow - Transforma Tu Cuerpo y Autoestima en 21 Días</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #FBF8F3; /* Beige muy claro como base */
+            color: #4A3B31; /* Marrón oscuro para texto principal por defecto */
+        }
+        .font-heading {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-bg {
+            /* IMPORTANTE: Reemplaza esta URL con tu imagen principal de alta calidad y realista. Ejemplo: una persona disfrutando de una sesión o mostrando resultados sutiles. */
+            background-image: url("https://placehold.co/1600x1000/4A3B31/FFFFFF?text=Tu+Imagen+Impactante+Aqu%C3%AD");
+            background-size: cover;
+            background-position: center 60%; /* Ajusta para que se vea bien la parte importante de la imagen */
+            position: relative;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.7) 100%); /* Degradado para mejor legibilidad */
+        }
+        .brand-gold {
+            color: #B08D57; /* Un tono dorado elegante */
+        }
+        .brand-brown {
+            color: #4A3B31;
+        }
+        .bg-brand-cream {
+            background-color: #FBF8F3;
+        }
+        .bg-brand-brown-light {
+            background-color: #EAE5E0; /* Un beige/marrón más claro y suave para secciones */
+        }
+        .btn-whatsapp {
+            background-color: #25D366; /* Color oficial de WhatsApp */
+            color: white;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+        }
+        .btn-whatsapp:hover {
+            background-color: #1DAE54;
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 6px 20px rgba(29, 174, 84, 0.5);
+        }
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 800; /* Más peso para los títulos */
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px; /* Línea más ancha */
+            height: 4px;  /* Línea más gruesa */
+            background-color: #B08D57; /* Dorado */
+            margin: 12px auto 0; /* Más espacio */
+        }
+        .bullet-icon {
+            color: #B08D57; /* Dorado */
+            margin-right: 0.85rem; /* Un poco más de espacio */
+            flex-shrink: 0; /* Evita que el icono se encoja */
+        }
+        .offer-card {
+            background-color: white;
+            border: 2px solid #B08D57; /* Borde dorado */
+            box-shadow: 0 15px 30px rgba(176, 141, 87, 0.2); /* Sombra más pronunciada */
+            border-radius: 16px; /* Bordes más redondeados */
+        }
+        .strikethrough-price {
+            text-decoration: line-through;
+            color: #9CA3AF; /* Gris, se mantiene para el precio tachado estándar */
+        }
+        .testimonial-card {
+            background-color: #fff;
+            border-left: 5px solid #B08D57;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        /* Animación sutil para aparición de elementos */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ESTILOS ACTUALIZADOS SOLICITADOS POR EL USUARIO */
+        .text-gray-100 {
+            color: #4A3B31; /* Aplicando el color brand-brown */
+        }
+        .text-gray-200 {
+            color: #4A3B31; /* Aplicando el color brand-brown */
+        }
+        .text-gray-300 {
+            color: #4A3B31; /* Aplicando el color brand-brown */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <section class="hero-bg text-white min-h-screen flex flex-col justify-center items-center p-6 relative overflow-hidden">
+        <div class="hero-overlay"></div>
+        <div class="relative z-10 text-center max-w-4xl mx-auto reveal-on-scroll">
+            <h1 class="font-heading text-5xl sm:text-6xl md:text-7xl font-extrabold mb-6 leading-tight">
+                ¿Cansada de Luchar Contra la Celulitis y Flacidez?
+                <span class="block brand-gold text-4xl sm:text-5xl md:text-6xl mt-3">Descubre el Secreto ‘Madero Body Glow’</span>
+            </h1>
+            <p class="text-xl sm:text-2xl md:text-3xl mb-10 font-light max-w-2xl mx-auto">
+                Transforma tu cuerpo, recupera tu confianza y siéntete radiante en solo <strong>21 días</strong>. Sin dietas extremas ni gimnasio.
+            </p>
+            <a href="https://wa.me/TUNUMERODEWHATSAPP?text=RENUEVA" target="_blank" class="btn-whatsapp font-bold py-5 px-12 rounded-lg text-xl inline-flex items-center shadow-lg transform hover:scale-105">
+                <i class="fab fa-whatsapp mr-3 text-3xl"></i>
+                ¡Sí, Quiero Mi Transformación!
+            </a>
+        </div>
+    </section>
+
+    <section id="interes" class="py-16 md:py-24 bg-brand-cream">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto reveal-on-scroll">
+                <h2 class="section-title text-4xl md:text-5xl brand-brown mb-6">¿Qué es la Maderoterapia y Por Qué Todas Hablan de Ella?</h2>
+                <p class="text-lg brand-brown mb-6">
+                    La Maderoterapia es una técnica colombiana ancestral que utiliza instrumentos de madera anatómicamente diseñados para <strong>esculpir tu cuerpo de forma 100% natural y no invasiva</strong>.
+                </p>
+                <p class="text-lg brand-brown mb-8">
+                    Hoy es tendencia porque ofrece resultados visibles y duraderos sin pasar por el quirófano. Activa la circulación, elimina toxinas, reduce la celulitis y moldea tu figura, ¡mientras disfrutas de un masaje profundamente relajante! Es el equilibrio perfecto entre belleza y bienestar.
+                </p>
+                <img src="https://placehold.co/600x400/D4CFC8/4A3B31?text=Maderas+Terap%C3%A9uticas+en+Acci%C3%B3n" alt="Instrumentos de maderoterapia y ambiente de spa" class="rounded-lg shadow-xl mx-auto reveal-on-scroll" style="max-height: 400px;">
+            </div>
+        </div>
+    </section>
+
+    <section id="deseo" class="py-16 md:py-24 bg-brand-brown-light">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto reveal-on-scroll">
+                <h2 class="section-title text-4xl md:text-5xl brand-brown mb-6">¿Te Identificas con Esto? Es Hora de un Cambio Real.</h2>
+                <p class="text-lg brand-brown mb-12">
+                    Si has probado de todo (dietas, cremas, ejercicios) y sigues luchando contra la celulitis rebelde, la flacidez postparto, la retención de líquidos o esa sensación de pesadez e hinchazón... <strong class="brand-gold">El método ‘Madero Body Glow’ está diseñado para ti.</strong>
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="reveal-on-scroll">
+                    <img src="https://placehold.co/600x750/B08D57/FFFFFF?text=Mujer+Sinti%C3%A9ndose+Bien" alt="Mujer sonriendo y sintiéndose confiada con su cuerpo" class="rounded-xl shadow-2xl mx-auto">
+                     </div>
+                <div class="space-y-6 reveal-on-scroll">
+                    <h3 class="font-heading text-3xl brand-brown mb-6">Imagina Poder Lograr Esto (¡Y Más!):</h3>
+                    <div class="flex items-start p-5 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <i class="fas fa-award bullet-icon text-3xl mt-1"></i>
+                        <p class="brand-brown text-lg"><strong>Remodelar tu silueta y reducir centímetros</strong> de forma visible, sin fajas ni sacrificios extremos.</p>
+                    </div>
+                    <div class="flex items-start p-5 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <i class="fas fa-water bullet-icon text-3xl mt-1"></i>
+                        <p class="brand-brown text-lg"><strong>Combatir la celulitis y la piel de naranja</strong>, logrando una piel más lisa y tonificada en solo 21 días.</p>
+                    </div>
+                    <div class="flex items-start p-5 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <i class="fas fa-feather-alt bullet-icon text-3xl mt-1"></i>
+                        <p class="brand-brown text-lg"><strong>Aliviar la pesadez y la hinchazón</strong> en piernas y abdomen, sintiéndote más ligera y activa.</p>
+                    </div>
+                    <div class="flex items-start p-5 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <i class="fas fa-smile-beam bullet-icon text-3xl mt-1"></i>
+                        <p class="brand-brown text-lg"><strong>Reconectar con tu cuerpo y disparar tu autoestima</strong>, sintiéndote atractiva y segura frente al espejo.</p>
+                    </div>
+                     <div class="flex items-start p-5 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <i class="fas fa-spa bullet-icon text-3xl mt-1"></i>
+                        <p class="brand-brown text-lg"><strong>Disfrutar de un momento de relax y autocuidado</strong> que libera toxinas y tensiones, renovando tu energía.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-brand-cream">
+        <div class="container mx-auto px-6 reveal-on-scroll">
+            <div class="text-center mb-16">
+                <p class="text-xl brand-gold font-semibold">Te presento una transformación integral:</p>
+                <h2 class="section-title text-4xl md:text-5xl brand-brown mt-3">Pack Exclusivo ‘Renueva tu Cuerpo & Tu Autoestima’</h2>
+            </div>
+
+            <div class="max-w-xl mx-auto offer-card p-8 md:p-12 text-center transform hover:scale-105 transition-transform duration-300">
+                <i class="fas fa-gift text-5xl brand-gold mb-6"></i>
+                <ul class="space-y-5 brand-brown mb-10 text-left text-lg">
+                    <li class="flex items-center"><i class="fas fa-gem bullet-icon text-xl"></i><strong>6 sesiones presenciales</strong> de Maderoterapia ‘Body Glow’ 100% personalizada.</li>
+                    <li class="flex items-center"><i class="fas fa-stethoscope bullet-icon text-xl"></i><strong>1 diagnóstico corporal detallado GRATUITO</strong> para enfocar tus objetivos.</li>
+                    <li class="flex items-center"><i class="fas fa-book-open bullet-icon text-xl"></i><strong>1 guía digital exclusiva</strong> de autocuidado detox y hábitos saludables.</li>
+                    <li class="flex items-center"><i class="fab fa-whatsapp bullet-icon text-xl"></i><strong>Seguimiento personalizado</strong> por WhatsApp para resolver dudas.</li>
+                    <li class="flex items-center"><i class="fas fa-users bullet-icon text-xl"></i><strong>Acceso prioritario</strong> al grupo VIP de Bienestar y Belleza Natural.</li>
+                </ul>
+                <div class="my-10">
+                    <p class="brand-brown text-xl mb-2">Consigue tu transformación completa por solo:</p>
+                    <p class="font-heading text-7xl brand-brown my-3">147€</p>
+                    <p class="text-lg strikethrough-price mb-1">(Valorado en 315€)</p>
+                    <p class="text-md brand-gold font-semibold">¡Ahorras 168€!</p>
+                </div>
+                <a href="https://wa.me/TUNUMERODEWHATSAPP?text=RENUEVA%20PACK" target="_blank" class="btn-whatsapp font-bold py-5 px-10 rounded-lg text-xl inline-flex items-center shadow-lg w-full justify-center">
+                    <i class="fab fa-whatsapp mr-3 text-3xl"></i>
+                    ¡Sí, Quiero Mi Pack AHORA!
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-brand-brown-light">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-4xl md:text-5xl brand-brown text-center mb-16 reveal-on-scroll">Lo Que Dicen Quienes Ya Probaron ‘Madero Body Glow’</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="testimonial-card p-6 rounded-lg reveal-on-scroll">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60x60/B08D57/FFFFFF?text=LP" alt="Laura P." class="rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-lg brand-brown">Laura P.</h4>
+                            <p class="text-sm brand-brown opacity-75">Barcelona</p> </div>
+                    </div>
+                    <p class="brand-brown italic">"Después de mi embarazo, no reconocía mi abdomen. Con Madero Body Glow, no solo reduje la flacidez, ¡sino que recuperé la confianza! Es increíble lo relajante que es cada sesión."</p>
+                    <div class="mt-3 text-yellow-400">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-card p-6 rounded-lg reveal-on-scroll" style="transition-delay: 0.2s;">
+                     <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60x60/B08D57/FFFFFF?text=SM" alt="Sofia M." class="rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-lg brand-brown">Sofía M.</h4>
+                            <p class="text-sm brand-brown opacity-75">Tarragona</p>
+                        </div>
+                    </div>
+                    <p class="brand-brown italic">"Tenía las piernas siempre hinchadas y con celulitis que odiaba. En pocas semanas noté un cambio brutal. ¡Mis vaqueros me quedan mejor que nunca y me siento mucho más ligera!"</p>
+                     <div class="mt-3 text-yellow-400">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="testimonial-card p-6 rounded-lg md:col-span-2 lg:col-span-1 reveal-on-scroll" style="transition-delay: 0.4s;">
+                     <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60x60/B08D57/FFFFFF?text=CG" alt="Carla G." class="rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-lg brand-brown">Carla G.</h4>
+                            <p class="text-sm brand-brown opacity-75">Girona</p>
+                        </div>
+                    </div>
+                    <p class="brand-brown italic">"Buscaba algo natural y efectivo. La maderoterapia con [Tu Nombre/Nombre de Negocio] ha superado mis expectativas. No solo veo mi cuerpo más moldeado, sino que es mi momento de desconexión total."</p>
+                     <div class="mt-3 text-yellow-400">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-brand-brown text-white">
+        <div class="container mx-auto px-6 text-center reveal-on-scroll">
+            <i class="fas fa-stopwatch text-6xl text-yellow-400 mb-6 animate-pulse"></i>
+            <h2 class="font-heading text-4xl md:text-5xl mb-6 brand-gold">¡Tu Momento es AHORA! Plazas Muy Limitadas.</h2>
+            <p class="text-xl md:text-2xl mb-4 text-gray-100"> 🛑 Para garantizar una atención premium y personalizada, solo acepto <strong class="text-yellow-400 text-3xl font-bold">10 nuevas clientas</strong> este mes para el Pack ‘Renueva tu Cuerpo & Tu Autoestima’.
+            </p>
+            <p class="text-lg text-gray-200 mb-10"> 🎯 Esta oferta especial <strong class="underline">termina el próximo domingo a las 23:59h</strong> o cuando se agoten las plazas (lo que ocurra primero). ¡No te quedes fuera!
+            </p>
+            <h3 class="font-heading text-3xl md:text-4xl brand-gold mb-6">¿Lista para Verte y Sentirte Espectacular?</h3>
+            <p class="text-xl text-gray-100 mb-8 max-w-xl mx-auto"> Envía la palabra <strong class="brand-gold text-2xl">“RENUEVA”</strong> por WhatsApp y asegura tu plaza. ¡Te guiaré paso a paso para agendar tu primera sesión!
+            </p>
+            <a href="https://wa.me/TUNUMERODEWHATSAPP?text=RENUEVA" target="_blank" class="btn-whatsapp font-bold py-6 px-16 rounded-xl text-2xl inline-flex items-center shadow-xl transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-green-400">
+                <i class="fab fa-whatsapp mr-4 text-4xl"></i>
+                Reservar Mi Sesión por WhatsApp
+            </a>
+             <p class="text-md text-gray-300 mt-8"> (Haz clic o guarda el número y envía "RENUEVA". ¡Es fácil y rápido!)
+            </p>
+        </div>
+    </section>
+
+    <section class="py-12 bg-brand-cream border-t border-gray-300">
+        <div class="container mx-auto px-6 text-center brand-brown reveal-on-scroll"> <h4 class="font-semibold mb-3 text-xl">¿Dónde Encontrarme?</h4>
+            <p class="mb-1"><i class="fas fa-map-marker-alt brand-gold mr-2"></i>[Tu Dirección o Zona de Servicio Principal], [Ciudad]</p>
+            <p class="mb-4"><i class="fas fa-clock brand-gold mr-2"></i>Horario: Lunes a Viernes de 10h a 20h (con cita previa)</p>
+            <p class="text-sm italic opacity-80">Para una experiencia óptima, todas las sesiones son con cita previa confirmada por WhatsApp.</p> </div>
+    </section>
+
+    <footer class="bg-brand-brown text-gray-200 py-10"> <div class="container mx-auto px-6 text-center">
+            <p class="mb-2">&copy; 2025 [Tu Nombre o Nombre de tu Negocio]. Todos los derechos reservados.</p>
+            <p class="text-sm">Maderoterapia Profesional en [Tu Ciudad/Zona] para Resultados Reales y Bienestar Integral.</p>
+            </div>
+    </footer>
+
+    <script>
+        // Script para animaciones de scroll reveal
+        const revealElements = document.querySelectorAll('.reveal-on-scroll');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, {
+            threshold: 0.1 
+        });
+
+        revealElements.forEach(el => {
+            revealObserver.observe(el);
+        });
+
+        // Pequeño script para suavizar el scroll si se añaden enlaces internos en el futuro
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.target === '_blank' && this.href.includes('wa.me')) {
+                    return;
+                }
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId.length > 1) {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
